@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-        <h1>REACT REST COUNTRIES</h1>
+        <h1 >LEARN <span className='text-h1'>REACT REST COUNTRIES</span> </h1>
     </>
   )
 }
