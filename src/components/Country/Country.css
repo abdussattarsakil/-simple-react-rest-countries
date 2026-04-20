@@ -1,0 +1,18 @@
+.visited{
+    color: rgba(6, 240, 41, 0.733);
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.notVisited{
+    color: rgba(242, 15, 15, 0.664);
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.visited-info{
+   background-color: rgb(25, 25, 24);
+   border: solid 2px rgb(179, 179, 24);
+   border-radius: 10px;
+   padding: 10px;
+}

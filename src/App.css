@@ -7,7 +7,12 @@
     border-radius: 10px;
     margin: 20px;
     padding: 10px;
+    text-align: center;
+}
+
+.btn{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     text-align:justify;
+    margin: 5px;
 }
