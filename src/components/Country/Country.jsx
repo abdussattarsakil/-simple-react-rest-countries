@@ -1,24 +1,37 @@
 import React, { useState } from 'react';
 import './Country.css'
 
-const Country = ({ country }) => {
+const Country = ({ country, setVisitCountry }) => {
     const { name, area, population, flags, continents, region } = country
 
     const [visited, setVisited] = useState(false);
 
     const handleVisited = () => {
-        console.log("success btn clicked")
+        setVisitCountry((prev) => {
+            const isExist = prev.includes(name.common);
+
+            if (isExist) return prev;
+
+            return [...prev, name.common];
+        });
+
         setVisited(true);
-    }
+    };
+
 
     const handleNotVisited = () => {
-        setVisited(false)
+        setVisitCountry((prev) => {
+            return prev.filter(country => country !== name.common);
+        });
+
+        setVisited(false);
+        
     }
 
     return (
         <>
             <div >
-                <div className='card'>
+                <div className={`card ${visited && 'country-visited'}`}>
                     <div>
                         <h2 className='normal text-h1'>Name: {name.common}</h2>
                         <h3>{name.official}</h3>

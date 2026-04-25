@@ -16,3 +16,7 @@
    border-radius: 10px;
    padding: 10px;
 }
+
+.country-visited{
+    border-color: green;
+}
