@@ -40,15 +40,15 @@ const Country = ({ country, setVisitCountry }) => {
                         <p>Area:-{area.area} , Population:-{population.population}</p>
                     </div>
 
-                    <div>
+                    <div className='m-auto'>
                         <img src={flags.flags.png} alt={flags.flags.alt} />
                     </div>
 
-                    <div className='btn'>
-                        <button onClick={handleVisited}>
+                    <div className='flex justify-around'>
+                        <button className='btn ' onClick={handleVisited}>
                             Visited ??
                         </button>
-                        <button onClick={handleNotVisited}>
+                        <button className='btn' onClick={handleNotVisited}>
                             Not Visited ??
                         </button>
 

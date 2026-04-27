@@ -9,8 +9,8 @@ const Countries = ({ countriesPromise }) => {
 
     return (
         <>
-            <h3>Total Countries:- {countries.length}</h3>
-            <h3>Total Visited Country Number: {visitCountry.length}</h3>
+            <h3 className='text-blue-400 text-5xl'>Total Countries:- {countries.length}</h3>
+            <h3 className='text-green-500 font-bold text-5xl'>Total Visited Country Number: {visitCountry.length}</h3>
             <div className='card1'>
                 {
                     countries.map(country => <Country

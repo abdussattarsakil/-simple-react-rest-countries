@@ -1,3 +1,6 @@
+@import "tailwindcss";
+@import "daisyui/daisyui.css";
+
 .text-h1{
     color: rgb(113, 202, 44);
 }
